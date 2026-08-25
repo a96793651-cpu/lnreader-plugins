@@ -425,7 +425,7 @@ export class MadaraPlugin implements Plugin.PluginBase {
 
     if (!chapterText || chapterText.length === 0) {
       throw new Error(
-        `Chapter content container not found for ${chapterPath} — site layout may have changed; retry`,
+        `Chapter content container not found for ${chapterPath}: site layout may have changed; retry`,
       );
     }
 

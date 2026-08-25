@@ -1,7 +1,7 @@
 // Regression test for lnreader/lnreader-plugins#2465 (Riwyat @ cenele.com:
 // no covers / empty chapters). Deterministic: the REAL generated plugin code
 // (bundled exactly like scripts/live-check-plugin.js) runs against SAVED
-// live-site fixtures via a URL-matched global fetch stub — no network.
+// live-site fixtures via a URL-matched global fetch stub: no network.
 //
 // Run:  node plugins/multisrc/generate-multisrc-plugins.js   (once, if the
 //        generated plugins/arabic/Riwyat[madara].ts is missing)
@@ -190,6 +190,6 @@ await expectReject(
 );
 
 console.log(
-  `\n${failures === 0 ? 'ALL GREEN' : failures + ' FAILING (RED — bug reproduced)'}`,
+  `\n${failures === 0 ? 'ALL GREEN' : failures + ' FAILING (RED: bug reproduced)'}`,
 );
 process.exit(failures === 0 ? 0 : 1);
