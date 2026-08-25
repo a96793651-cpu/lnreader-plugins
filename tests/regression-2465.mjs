@@ -77,7 +77,7 @@ const plugin = mod.default ?? mod;
 fs.unlinkSync(tmpFile);
 
 // --- URL-matched fixture stub: the template talks to the site only via global fetch ---
-globalThis.fetch = async (url) => {
+globalThis.fetch = async url => {
   const u = String(url);
   let body;
   if (u.includes('ajax/chapters')) body = fixtures.chapters;
