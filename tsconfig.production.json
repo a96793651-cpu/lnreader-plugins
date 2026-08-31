@@ -14,6 +14,7 @@
 
     "resolveJsonModule": true,
 
+    "rootDir": "./plugins",
     "outDir": "./.js/plugins",
 
     "allowJs": true,
@@ -25,14 +26,13 @@
     "strict": true,
     "skipLibCheck": true,
 
-    "noEmitOnError": false
+    "noCheck": true,
+    "noResolve": true
   },
 
   "include": [
     "./plugins/**/*.ts",
-    "./plugins/**/*.tsx",
-    "./src/**/*.ts",
-    "./src/**/*.tsx"
+    "./plugins/**/*.tsx"
   ],
 
   "exclude": [
